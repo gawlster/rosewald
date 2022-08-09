@@ -85,7 +85,9 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                         className='w-64 h-14 flex items-center justify-center cursor-pointer'
                         onClick={() => router.push('/')}>
                         <div className='flex items-center justify-center font-bold text-2xl'>
-                            <p className='pink-glow'>ROSEWALD STUDIOS</p>
+                            <p className='pink-glow hover:scale-105 transition-all'>
+                                ROSEWALD STUDIOS
+                            </p>
                         </div>
                     </div>
                     <div className='flex flex-row justify-center items-center gap-5'>

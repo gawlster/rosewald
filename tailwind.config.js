@@ -8,7 +8,8 @@ module.exports = {
                 'c-pink': '#fd94c8',
             },
             dropShadow: {
-                nav: '1px 2px 6px #fd94c8',
+                pink: '1px 2px 6px #fd94c8',
+                'pink-sm': '1px 1px 3px rgba(253, 148, 200, 0.4)',
             },
         },
     },
