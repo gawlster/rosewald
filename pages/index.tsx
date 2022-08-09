@@ -47,21 +47,14 @@ const Home: NextPage = () => {
                                 className='hover:text-c-green transition-all cursor-pointer'
                             />
                         </a>
-                        <a href='https://www.instagram.com'>
+                        <a href='https://www.instagram.com/rosewald._.studios' target='_blank'>
                             <FontAwesomeIcon
                                 icon={faInstagramSquare}
                                 fontSize='25px'
                                 className='hover:text-c-green transition-all cursor-pointer'
                             />
                         </a>
-                        <a href='https://www.google.com'>
-                            <FontAwesomeIcon
-                                icon={faSquarePhone}
-                                fontSize='25px'
-                                className='hover:text-c-green transition-all cursor-pointer'
-                            />
-                        </a>
-                        <a href='https://www.gmail.com'>
+                        <a href='https://www.gmail.com' target='_blank'>
                             <FontAwesomeIcon
                                 icon={faEnvelope}
                                 fontSize='25px'

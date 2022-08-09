@@ -13,3 +13,28 @@
     color: #fd94c8;
     text-shadow: 1px 2px 6px #fd94c8;
 }
+.green-glow {
+    color: #a1f0a8;
+    text-shadow: 1px 2px 6px #a1f0a8;
+}
+
+.change-on-hover {
+    position: relative;
+    cursor: pointer;
+}
+.change-on-hover > div:nth-of-type(1) {
+    position: static;
+    opacity: 1;
+}
+.change-on-hover > div:nth-of-type(2) {
+    position: absolute;
+    opacity: 0;
+}
+.change-on-hover:hover > div:nth-of-type(1) {
+    position: absolute;
+    opacity: 0;
+}
+.change-on-hover:hover > div:nth-of-type(2) {
+    position: static;
+    opacity: 1;
+}

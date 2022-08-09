@@ -7,6 +7,9 @@ module.exports = {
                 'c-green': '#a1f0a8',
                 'c-pink': '#fd94c8',
             },
+            dropShadow: {
+                nav: '1px 2px 6px #fd94c8',
+            },
         },
     },
     plugins: [],
