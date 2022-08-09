@@ -25,6 +25,7 @@ const Contact: NextPage = () => {
                     <div className='absolute h-full w-full'>
                         <div className='h-2/3 w-full grayscale relative'>
                             <Image
+                                alt=''
                                 src={`/sample${imageNumber}.jpg`}
                                 layout='fill'
                                 objectFit='cover'
@@ -37,8 +38,8 @@ const Contact: NextPage = () => {
                             <div className='w-full flex flex-col gap-1 text-center'>
                                 <div className='text-[1.7rem] font-bold italic'>Get in touch!</div>
                                 <div>
-                                    For bookings and inquiries, fill out the form below, and I'll
-                                    get back to you as soon as possible.
+                                    For bookings and inquiries, fill out the form below, and
+                                    I&apos;ll get back to you as soon as possible.
                                 </div>
                             </div>
                             <form

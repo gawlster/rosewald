@@ -1,6 +1,7 @@
 import { faX } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 
@@ -32,7 +33,7 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                     {!open ? (
                         <div className='cursor-pointer' onClick={() => setOpen(true)}>
                             <div className='relative overflow-hidden h-14 w-10 flex items-center justify-center'>
-                                <Image src={'/logo.png'} layout='fill' objectFit='cover' />
+                                <Image alt='' src={'/logo.png'} layout='fill' objectFit='cover' />
                             </div>
                         </div>
                     ) : (
@@ -43,12 +44,12 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                                 <FontAwesomeIcon icon={faX} />
                             </div>
                             <div className=' w-full h-full flex flex-col justify-center items-center'>
-                                <a
+                                <Link
                                     href='/'
                                     className={`${'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'}`}>
                                     Home
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href='/about'
                                     className={`${
                                         current === 'about'
@@ -56,8 +57,8 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                                             : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                                     }`}>
                                     About Kaleigh
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href='/work'
                                     className={`${
                                         current === 'work'
@@ -65,8 +66,8 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                                             : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                                     }`}>
                                     See my work
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href='/contact'
                                     className={`${
                                         current === 'contact'
@@ -74,7 +75,7 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                                             : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                                     }`}>
                                     Get in touch
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     )}
@@ -97,7 +98,7 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                                     ? 'font-bold not-italic text-c-green'
                                     : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                             }`}>
-                            <a href='/about'>About Kaleigh</a>
+                            <Link href='/about'>About Kaleigh</Link>
                         </div>
                         <div
                             className={`${
@@ -105,7 +106,7 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                                     ? 'font-bold not-italic text-c-green'
                                     : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                             }`}>
-                            <a href='/work'>See my work</a>
+                            <Link href='/work'>See my work</Link>
                         </div>
                         <div
                             className={`${
@@ -113,7 +114,7 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                                     ? 'font-bold not-italic text-c-green'
                                     : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                             }`}>
-                            <a href='/contact'>Get in touch</a>
+                            <Link href='/contact'>Get in touch</Link>
                         </div>
                     </div>
                 </div>

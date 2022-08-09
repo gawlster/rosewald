@@ -14,7 +14,7 @@ const Home: NextPage = () => {
             <div className='w-full h-full flex justify-center items-center py-3'>
                 <div className='w-full h-full flex flex-col justify-center items-center'>
                     <div className='relative h-2/3 max-h-80 w-2/3 max-w-80'>
-                        <Image alt='Logo' src='/logo.png' layout='fill' objectFit='contain'></Image>
+                        <Image alt='' src='/logo.png' layout='fill' objectFit='contain'></Image>
                     </div>
                     <div className='pink-glow text-[1.875rem] font-bold text-center'>
                         ROSEWALD STUDIOS
@@ -40,21 +40,24 @@ const Home: NextPage = () => {
                                 width: '40px',
                             }}
                         />
-                        <a href='https://www.facebook.com' target='_blank'>
+                        <a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon
                                 icon={faFacebookSquare}
                                 fontSize='25px'
                                 className='hover:text-c-green transition-all cursor-pointer'
                             />
                         </a>
-                        <a href='https://www.instagram.com/rosewald._.studios' target='_blank'>
+                        <a
+                            href='https://www.instagram.com/rosewald._.studios'
+                            target='_blank'
+                            rel='noreferrer'>
                             <FontAwesomeIcon
                                 icon={faInstagramSquare}
                                 fontSize='25px'
                                 className='hover:text-c-green transition-all cursor-pointer'
                             />
                         </a>
-                        <a href='https://www.gmail.com' target='_blank'>
+                        <a href='https://www.gmail.com' target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon
                                 icon={faEnvelope}
                                 fontSize='25px'
