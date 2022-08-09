@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import SampleImage from '../components/SampleImage'
@@ -31,11 +32,11 @@ const Work: NextPage = () => {
                             )
                         })}
                     </div>
-                    <a
+                    <Link
                         href='/contact'
                         className='italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:drop-shadow-green-sm hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'>
                         Like what you see?
-                    </a>
+                    </Link>
                 </div>
             )}
         </div>
