@@ -5,6 +5,7 @@ module.exports = {
         extend: {
             colors: {
                 'c-green': '#a1f0a8',
+                'c-green-d': '#1cad28',
                 'c-pink': '#fd94c8',
             },
             dropShadow: {
@@ -13,9 +14,10 @@ module.exports = {
                 green: '1px 2px 6px #a1f0a8',
                 'green-sm': '1px 1px 3px rgba(161, 240, 168, 0.2)',
                 black: '1px 2px 6px #000000',
+                'black-dark': '2px 3px 4px #000000',
                 'black-sm': '1px 1px 3px rgba(0, 0, 0, 0.2)',
             },
         },
     },
-    plugins: [],
+    plugins: [require('tailwind-scrollbar-hide')],
 }
