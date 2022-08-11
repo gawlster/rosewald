@@ -38,3 +38,17 @@
     position: static;
     opacity: 1;
 }
+
+.sample-pic .front {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.sample-pic .front .button {
+    pointer-events: none;
+}
+.sample-pic:hover .front {
+    opacity: 1;
+}
+.sample-pic:hover .front .button {
+    pointer-events: auto;
+}

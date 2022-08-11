@@ -62,13 +62,13 @@ const Work: NextPage = () => {
                             })}
                         </div>
                         <div
-                            className='absolute drop-shadow-black top-1/2 -translate-y-1/2 left-0 text-3xl text-black cursor-pointer hover:text-c-green-d transition-all'
+                            className='absolute z-30 drop-shadow-black top-1/2 -translate-y-1/2 left-0 text-3xl text-black cursor-pointer hover:text-c-green-d transition-all'
                             onClick={(e) => handleScrollClick(e, 0)}>
                             <div className='w-full h-[30px] drop-shadow-black-dark translate-y-[12.5%] absolute -z-10 left-0 right-0 top-0 bottom-0 rounded-full bg-white' />
                             <FontAwesomeIcon icon={faArrowAltCircleLeft} />
                         </div>
                         <div
-                            className='absolute drop-shadow-black top-1/2 -translate-y-1/2 right-0 text-3xl text-black cursor-pointer hover:text-c-green-d transition-all'
+                            className='absolute z-30 drop-shadow-black top-1/2 -translate-y-1/2 right-0 text-3xl text-black cursor-pointer hover:text-c-green-d transition-all'
                             onClick={(e) => handleScrollClick(e, 1)}>
                             <div className='w-full h-[30px] drop-shadow-black-dark translate-y-[12.5%] absolute -z-10 left-0 right-0 top-0 bottom-0 rounded-full bg-white' />
                             <FontAwesomeIcon icon={faArrowAltCircleRight} />
