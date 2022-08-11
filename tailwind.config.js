@@ -12,6 +12,8 @@ module.exports = {
                 'pink-sm': '1px 1px 3px rgba(253, 148, 200, 0.2)',
                 green: '1px 2px 6px #a1f0a8',
                 'green-sm': '1px 1px 3px rgba(161, 240, 168, 0.2)',
+                black: '1px 2px 6px #000000',
+                'black-sm': '1px 1px 3px rgba(0, 0, 0, 0.2)',
             },
         },
     },
