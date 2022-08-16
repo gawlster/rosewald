@@ -20,8 +20,9 @@ const About: NextPage = () => {
                         My goal is to help you achieve the look you want while also creating a{' '}
                         <div className='inline font-bold text-c-pink'>comfortable</div> and{' '}
                         <div className='inline font-bold text-c-pink'>welcoming</div> environment
-                        you'll love being in. I believe every picture tells a million stories and
-                        I'd be thrilled to help you write yours! I hope to work with you soon!
+                        you&apos;ll love being in. I believe every picture tells a million stories
+                        and I&apos;d be thrilled to help you write yours! I hope to work with you
+                        soon!
                     </div>
                 </div>
                 <div className='italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:drop-shadow-green-sm hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'>
