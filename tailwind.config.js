@@ -7,6 +7,8 @@ module.exports = {
                 'c-green': '#a1f0a8',
                 'c-green-d': '#1cad28',
                 'c-pink': '#fd94c8',
+                'success-green': 'rgb(42, 133, 42)',
+                'error-red': 'rgb(218, 32, 32)',
             },
             dropShadow: {
                 pink: '1px 2px 6px #fd94c8',

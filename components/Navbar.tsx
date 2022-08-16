@@ -27,7 +27,7 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
     }, [])
 
     return (
-        <div className='absolute top-0 right-0 left-0'>
+        <div className='absolute z-50 top-0 right-0 left-0'>
             {hamburger ? (
                 <div className='h-14 w-full flex justify-end p-4'>
                     {!open ? (
@@ -37,45 +37,41 @@ const Navbar: React.FC<{ current: 'about' | 'work' | 'contact' }> = ({ current }
                             </div>
                         </div>
                     ) : (
-                        <div className='absolute w-screen h-screen top-0 right-0 bg-neutral-800'>
+                        <div className='absolute w-screen h-screen top-0 right-0 bg-neutral-800 text-xl'>
                             <div
                                 className='absolute top-4 right-4 w-14 h-14 cursor-pointer text-white flex items-center justify-center text-xl hover:green-glow'
                                 onClick={() => setOpen(false)}>
                                 <FontAwesomeIcon icon={faX} />
                             </div>
                             <div className=' w-full h-full flex flex-col justify-center items-center'>
-                                <Link
-                                    href='/'
+                                <div
                                     className={`${'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'}`}>
-                                    Home
-                                </Link>
-                                <Link
-                                    href='/about'
+                                    <Link href='/'>Home</Link>
+                                </div>
+                                <div
                                     className={`${
                                         current === 'about'
                                             ? 'font-bold not-italic text-c-green'
                                             : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                                     }`}>
-                                    About Kaleigh
-                                </Link>
-                                <Link
-                                    href='/work'
+                                    <Link href='/about'>About Kaleigh</Link>
+                                </div>
+                                <div
                                     className={`${
                                         current === 'work'
                                             ? 'font-bold not-italic text-c-green'
                                             : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                                     }`}>
-                                    See my work
-                                </Link>
-                                <Link
-                                    href='/contact'
+                                    <Link href='/work'>See my work</Link>
+                                </div>
+                                <div
                                     className={`${
                                         current === 'contact'
                                             ? 'font-bold not-italic text-c-green'
                                             : 'italic font-light cursor-pointer text-center transition-all hover:font-bold hover:not-italic hover:text-c-green focus:font-bold focus:not-italic focus:text-c-green'
                                     }`}>
-                                    Get in touch
-                                </Link>
+                                    <Link href='/contact'>Get in touch</Link>
+                                </div>
                             </div>
                         </div>
                     )}
