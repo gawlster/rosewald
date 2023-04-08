@@ -1,38 +1,38 @@
 import { getHeightOfSampleFromWidth } from "./WorkSection";
 import Image from "next/image";
 
-export default function BookingSection() {
+export default function PackagesSection() {
     return (
         <div className="w-full px-10 py-20 bg-bg-mid flex flex-col justify-center items-center">
             <h1 className="mb-6 text-2xl font-semibold">Packages</h1>
             <div className="flex gap-2 flex-col justify-center items-center sm:flex-row w-full">
                 <div className="flex flex-col gap-2 w-full sm:w-auto sm:justify-end sm:items-end justify-center items-center">
-                    <Booking
+                    <Package
                         size="sm"
                         title="Rosies Choice"
                         description="$200, 8 photos edited, extras are $10 each"
-                        imagePath="/sampleImages/sample8.jpg"
+                        imagePath="/sampleImages/sample30.jpg"
                     />
-                    <Booking
+                    <Package
                         size="lg"
                         title="Events"
                         description="Graduation, Banquets, Birthdays, New years/Christmas parties, etc. $20 per hour for 30 photos, extras are $10 each."
-                        imagePath="/sampleImages/sample7.jpg"
+                        imagePath="/sampleImages/sample9.jpg"
 
                     />
                 </div>
                 <div className="flex flex-col gap-2 w-full sm:w-auto sm:justify-start sm:items-start justify-center items-center">
-                    <Booking
+                    <Package
                         size="lg"
                         title="Artist Contract"
                         description="For local music artists and people seeking product advertising. Contact for pricing."
-                        imagePath="/sampleImages/sample9.jpg"
+                        imagePath="/sampleImages/sample18.jpg"
                     />
-                    <Booking
+                    <Package
                         size="sm"
                         title="AirBNB"
                         description="Contact for pricing."
-                        imagePath="/sampleImages/sample10.jpg"
+                        imagePath="/sampleImages/sample31.jpg"
                     />
                 </div>
             </div>
@@ -40,7 +40,7 @@ export default function BookingSection() {
     )
 }
 
-function Booking({ size, title, description, imagePath }: {
+function Package({ size, title, description, imagePath }: {
     size: "lg" | "sm"
     title: string;
     description: string;
