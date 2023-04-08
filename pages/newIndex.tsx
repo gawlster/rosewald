@@ -1,4 +1,6 @@
 import AboutSection from "../components/AboutSection";
+import BookingSection from "../components/BookingSection";
+import ContactSection from "../components/ContactSection";
 import LandingSection from "../components/LandingSection";
 import WorkSection from "../components/WorkSection";
 
@@ -7,6 +9,7 @@ export default function Home() {
     <LandingSection />
     <AboutSection />
     <WorkSection />
-    {/* <ContactSection /> */}
+    <BookingSection />
+    <ContactSection />
   </div>
 }
