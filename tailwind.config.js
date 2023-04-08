@@ -9,6 +9,10 @@ module.exports = {
                 'c-pink': '#fd94c8',
                 'success-green': 'rgb(42, 133, 42)',
                 'error-red': 'rgb(218, 32, 32)',
+
+                'bg-dark': '#202125',
+                "bg-mid": "#363636",
+                "bg-light": "#5e574d"
             },
             dropShadow: {
                 pink: '1px 2px 6px #fd94c8',
