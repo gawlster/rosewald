@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function AboutSection() {
     return <div className="w-full bg-bg-mid px-8 py-20 flex justify-center items-center text-center">
         <div className="flex flex-col justify-center items-center gap-6 w-full max-w-xl">
-            <Image src="/kal.jpg" alt="" width="240px" height="300px" />
+            <Image src="/kal.jpg" alt="" width="250px" height="388px" />
             <p>
                 Hey! My name is{" "}
                 <span className="green-glow font-bold">Kaleigh Johnston</span>, I

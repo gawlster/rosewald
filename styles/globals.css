@@ -52,3 +52,11 @@
 .sample-pic:hover .front .button {
     pointer-events: auto;
 }
+
+.hide-scrollbars {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}

@@ -9,7 +9,7 @@ export default function LandingSection() {
             className="w-full bg-bg-dark px-6 py-20 flex flex-col gap-4 justify-center items-center"
             style={{ height: "calc(100vh * 0.8)", maxHeight: "850px", minHeight: "450px" }}
         >
-            <Image src="/logo.png" alt="" height="180px" width="150px" />
+            <Image src="/logo.png" alt="" height="203px" width="150px" />
             <h1 className="pink-glow text-2xl font-bold uppercase text-center">Rosewald Studios</h1>
             <div>
                 <div className="flex flex-row gap-2 justify-center items-center">
