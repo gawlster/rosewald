@@ -12,7 +12,7 @@ const Work: NextPage = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const numPics = 13;
+        const numPics = 35;
         let newArr = new Array(numPics).fill(0);
         newArr.forEach((_, i) => {
             newArr[i] = i + 1;
