@@ -6,7 +6,7 @@ const NUM_IMAGES_TOTAL = 30;
 export default function WorkSection() {
     const allImages = new Array(NUM_IMAGES_TOTAL).fill(0).map((item, i) => (
         <div key={i} className="w-64 h-[342px] sm:w-80 sm:h-[428px] relative">
-            <Image src={`/sampleImages/sample${i + 1}.jpg`} alt="" layout="fill" objectFit="cover" />
+            <Image priority src={`/sampleImages/sample${i + 1}.jpg`} alt="" layout="fill" objectFit="cover" />
         </div>
     ));
 

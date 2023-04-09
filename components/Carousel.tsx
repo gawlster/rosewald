@@ -1,6 +1,7 @@
 import React, { useCallback, useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleLeft, faArrowCircleRight, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import left from "./svgs/left.svg";
+import right from "./svgs/right.svg";
 
 export interface Props {
     children?: React.ReactNode;
@@ -11,7 +12,7 @@ export interface Props {
 const portionOfClientWidthToScroll = 4 / 5;
 
 export default function Carousel(props: Props) {
-    const isTouchDevice = false
+    const isTouchDevice = false;
 
     const ref = useRef<HTMLDivElement>(null);
     const startX = useRef(-1);
@@ -113,7 +114,7 @@ export default function Carousel(props: Props) {
                     onClick={handleLeftClick}
                     style={{ pointerEvents: showLeftButton ? "auto" : "none", opacity: showLeftButton ? "1" : "0" }}
                 >
-                    <FontAwesomeIcon icon={faArrowLeft} />
+                    <Image src={left} alt="" width="20px" height="20px" />
                 </button>
             </div>
             <div
@@ -137,7 +138,7 @@ export default function Carousel(props: Props) {
                     onClick={handleRightClick}
                     style={{ pointerEvents: showRightButton ? "auto" : "none", opacity: showRightButton ? "1" : "0" }}
                 >
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <Image src={right} alt="" width="20px" height="20px" />
                 </button>
             </div>
         </div>

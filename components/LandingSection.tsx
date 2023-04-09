@@ -1,7 +1,7 @@
-import { faFacebookSquare, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import mail from "./svgs/mail.svg"
+import facebook from "./svgs/facebook.svg";
+import instagram from "./svgs/instagram.svg";
 
 export default function LandingSection({ contactSectionRef }: { contactSectionRef: React.RefObject<HTMLDivElement> }) {
     return (
@@ -21,29 +21,20 @@ export default function LandingSection({ contactSectionRef }: { contactSectionRe
                             width: "40px",
                         }}
                     />
-                    <a href="https://m.facebook.com/Calgary.Portrait.Photographer" target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon
-                            icon={faFacebookSquare}
-                            fontSize="20px"
-                            className="hover:text-c-green transition-all cursor-pointer text-white"
-                        />
+                    <a href="https://m.facebook.com/Calgary.Portrait.Photographer" target="_blank" rel="noreferrer"
+                        className="hover:text-c-green transition-all cursor-pointer text-white leading-none">
+                        <Image src={facebook} alt="" width="20px" height="20px" />
                     </a>
                     <a
                         href="https://www.instagram.com/rosewald._.studios"
                         target="_blank"
-                        rel="noreferrer">
-                        <FontAwesomeIcon
-                            icon={faInstagramSquare}
-                            fontSize="20px"
-                            className="hover:text-c-green transition-all cursor-pointer text-white"
-                        />
+                        rel="noreferrer"
+                        className="hover:text-c-green transition-all cursor-pointer text-white leading-none">
+                        <Image src={instagram} alt="" width="20px" height="20px" />
                     </a>
-                    <a onClick={() => contactSectionRef.current?.scrollIntoView({ behavior: "smooth" })}>
-                        <FontAwesomeIcon
-                            icon={faEnvelope}
-                            fontSize="20px"
-                            className="hover:text-c-green transition-all cursor-pointer text-white"
-                        />
+                    <a onClick={() => contactSectionRef.current?.scrollIntoView({ behavior: "smooth" })}
+                        className="hover:text-c-green transition-all cursor-pointer text-white leading-none">
+                        <Image src={mail} alt="" width="20px" height="20px" />
                     </a>
                     <hr
                         style={{
