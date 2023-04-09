@@ -3,7 +3,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
-export default function LandingSection() {
+export default function LandingSection({ contactSectionRef }: { contactSectionRef: React.RefObject<HTMLDivElement> }) {
     return (
         <div
             className="w-full bg-bg-dark px-6 py-20 flex flex-col gap-4 justify-center items-center"
@@ -38,7 +38,7 @@ export default function LandingSection() {
                             className="hover:text-c-green transition-all cursor-pointer text-white"
                         />
                     </a>
-                    <a href="#contact">
+                    <a onClick={() => contactSectionRef.current?.scrollIntoView({ behavior: "smooth" })}>
                         <FontAwesomeIcon
                             icon={faEnvelope}
                             fontSize="20px"

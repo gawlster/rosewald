@@ -12,7 +12,7 @@ module.exports = {
 
                 'bg-dark': '#202125',
                 "bg-mid": "#363636",
-                "bg-light": "#5e574d"
+                "bg-light": "#424242"
             },
             dropShadow: {
                 pink: '1px 2px 6px #fd94c8',

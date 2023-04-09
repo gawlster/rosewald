@@ -6,7 +6,7 @@ const botpoison = new Botpoison({
     publicKey: "pk_67fbefc4-fed9-4972-99e8-cbd66efced7d",
 });
 
-export default function ContactSection() {
+export default function ContactSection({ contactSectionRef }: { contactSectionRef: React.RefObject<HTMLDivElement> }) {
     const [formValues, setFormValues] = useState({ name: "", email: "", phone: "", message: "" })
     const [submitting, setSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -40,15 +40,15 @@ export default function ContactSection() {
     }
 
     return (
-        <div id="contact" className="w-full px-10 py-20 bg-bg-dark flex justify-center">
+        <div className="w-full px-10 py-20 bg-bg-dark flex justify-center" ref={contactSectionRef}>
             <div className="w-full max-w-3xl flex flex-col md:flex-row rounded-md overflow-hidden">
-                <div className="w-96 p-6 bg-bg-mid">
+                <div className="w-full md:w-96 p-6 bg-bg-mid">
                     <h3 className="text-2xl font-semibold text-shadow mb-5">Reach out!</h3>
                     <p>I{"'"}d love to help bring your vision to life! Please let me know if you have a package in mind, or if you need help deciding.</p>
                 </div>
                 <div className="w-full bg-bg-light p-6">
                     <form onSubmit={handleSubmit}>
-                        <fieldset disabled={submitting || submitted} className="flex flex-col gap-3 py-4">
+                        <fieldset disabled={submitting || submitted} className="flex flex-col gap-3 md:py-4">
                             <input
                                 className="p-2 rounded-md bg-bg-mid"
                                 type="text" placeholder="Your name" value={formValues.name} onChange={(e) => setFormValues({ ...formValues, name: e.target.value })} />

@@ -3,13 +3,17 @@ import ContactSection from "../components/ContactSection";
 import LandingSection from "../components/LandingSection";
 import WorkSection from "../components/WorkSection";
 import PackagesSection from "../components/PackagesSection";
+import { useRef } from "react";
 
 export default function Home() {
-  return <div className="w-full overflow-x-hidden scroll-smooth text-white">
-    <LandingSection />
-    <AboutSection />
-    <WorkSection />
-    <PackagesSection />
-    <ContactSection />
+  const contactSectionRef = useRef<HTMLDivElement>(null);
+  return (
+    <div className="w-full overflow-x-hidden scroll-smooth text-white">
+      <LandingSection contactSectionRef={contactSectionRef} />
+      <AboutSection />
+      <WorkSection />
+      <PackagesSection />
+      <ContactSection contactSectionRef={contactSectionRef} />
   </div>
+  )
 }
