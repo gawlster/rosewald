@@ -1,0 +1,1 @@
+On desktop, left side should be the package image. The currently selected package image will be shown, and just a small strip for the other packages. Clicking on one of the strips selects that package. It should grow. Then you can have like a strip on the top, the image in the middle, and two strips on the bottom. Shouldn't matter for mobile.
