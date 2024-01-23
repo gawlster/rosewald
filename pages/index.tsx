@@ -1,9 +1,10 @@
+import { useRef } from "react";
 import AboutSection from "../components/AboutSection";
+import BookingSection from "../components/BookingSection";
 import ContactSection from "../components/ContactSection";
 import LandingSection from "../components/LandingSection";
-import WorkSection from "../components/WorkSection";
 import PackagesSection from "../components/PackagesSection";
-import { useRef } from "react";
+import WorkSection from "../components/WorkSection";
 
 export default function Home() {
   const contactSectionRef = useRef<HTMLDivElement>(null);
@@ -13,7 +14,8 @@ export default function Home() {
       <AboutSection />
       <WorkSection />
       <PackagesSection />
+      <BookingSection />
       <ContactSection contactSectionRef={contactSectionRef} />
-  </div>
-  )
+    </div>
+  );
 }
